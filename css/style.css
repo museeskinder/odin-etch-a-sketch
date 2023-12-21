@@ -1,6 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 
 .flex {
     display: flex;
@@ -8,20 +15,60 @@ body {
     justify-content: center;
 }
 
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    font-size: 30px;
+    margin: 20px;
+}
+
+main {
+    gap: 50px;
+    margin: 30px 0;
+}
+
 .board {
     border: 5px solid black;
     display: flex;
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 600px;
+    order: 2;
 }
 
-.pixel {
-
+.setting {
+    order: 1;
 }
 
+label {
+    padding-right: 10px;
+}
+
+input[type="color"] {
+    cursor: pointer;
+    border: 1px solid white;
+    height: 40px;
+    width: 80px;
+}
+
+.rainbow-toggle, .eraser-toggle {
+    width: 30px;
+    cursor: pointer;
+}
+
+.grid-range {
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
 
 footer {
     gap: 10px;
+    margin: 15px 0;
 }
 
 footer a {
