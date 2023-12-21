@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch a Sketch</h1>
+    </header>
+    <main>
+        <div class="board">
+
+        </div>
+        <div class="setting">
+            <div class="colors">
+                <div>
+                    <label for="background-color">Background color</label>
+                    <input type="color" id="background-color" name="background-color" value="#ffffff" class="picker">
+                </div>
+                <div>
+                    <label for="pencil-color">Background color</label>
+                    <input type="color" id="pencil-color" name="pencil-color" value"#000000" class="picker">
+                </div>
+                <div class="rainbow">
+                    <label for="rainbow-mode">Rainbow mode</label>
+                    <input type="range" min="0" max="1" id="rainbow-mode" class="rainbow-toggle">
+                </div>
+                <div class="eraser">
+                    <label for="eraser-mode">Eraser</label>
+                    <input type="range" min="0" max="1" id="eraser-mode" class="eraser-toggle">
+                </div>
+                <button class="clear">Clear</button>
+            </div>
+            
+            <div class="grid-size">
+                <label for="grid-size">Board size</label>
+                <input type="range" min="1" max="100" id="grid-size" name="size">
+                <p class="grid-size-info"><span class="grid-value"></span> X <sapn class="grid-value"></sapn></p>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="flex">
+        Copyright &copy; 2023  <a class="flex" href="">museeeskinder <i class="fa fa-github"></i></a>    
+    </footer>
+    
+</body>
+</html>
